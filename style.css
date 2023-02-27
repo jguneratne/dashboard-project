@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
 
     --body-bg-color: #f0fdfa;
     --main-bg-color: #d1fae5;
     --header-bg-color: #059669;
     --sidebar-bg-color: #10b981;
     --card-bg-color: #f0fdf4; 
+    --drop-shadow-color: #115e59;
 }
 
 body {
@@ -64,6 +66,7 @@ body {
 .card {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 1ch;
 }
 
 .card, 
