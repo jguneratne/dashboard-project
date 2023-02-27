@@ -69,15 +69,13 @@ body {
 .card, 
 .announce-card,
 .trend-card {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    align-items: start;
     border-radius: 1ch;
     background-color: var(--card-bg-color);
-}
-
-p {
     padding: 10px;
 }
+
 
 
 
