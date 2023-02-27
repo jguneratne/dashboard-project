@@ -55,24 +55,23 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
+    gap: 15px;
 }
 
 .announcements,
 .trending {
     display: grid;
-    grid-template-columns: minmax(1fr, 250px);
-}
-
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 1ch;
+    grid-template-columns: minmax(100px, 250px);
+    grid-template-rows: minmax(100%, 150px);
 }
 
 .card, 
-.announce-card {
+.announce-card,
+.trend-card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1ch;
     background-color: var(--card-bg-color);
-    justify-content: start;
 }
 
 p {
