@@ -7,6 +7,7 @@
     --main-bg-color: #d1fae5;
     --header-bg-color: #059669;
     --sidebar-bg-color: #10b981;
+    --card-bg-color: #f0fdf4; 
 }
 
 body {
@@ -35,5 +36,30 @@ body {
 }
 
 .main {
-    background-color: var(--main-bg-color)
+    background-color: var(--main-bg-color);
+    display: flex;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(45ch, 250px));
+    grid-template-rows: repeat(3, 3fr);
+}
+
+.third-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-columns: minmax(1fr, 250px);
+}
+
+.card, 
+.announce-card {
+    background-color: var(--card-bg-color);
+}
+
+
