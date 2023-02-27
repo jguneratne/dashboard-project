@@ -76,6 +76,10 @@ body {
     padding: 10px;
 }
 
+.card {
+    grid-template-rows: repeat(3, min-content);
+}
+
 
 
 
