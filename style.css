@@ -38,17 +38,21 @@ body {
 .main {
     background-color: var(--main-bg-color);
     display: flex;
+    flex-basis: auto;
+    padding: 15px;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, minmax(45ch, 250px));
+    grid-template-columns: repeat(2, minmax(100px, 350px));
     grid-template-rows: repeat(3, 3fr);
+    gap: 15px;
 }
 
 .third-col {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
 }
 
 .announcements,
@@ -57,9 +61,20 @@ body {
     grid-template-columns: minmax(1fr, 250px);
 }
 
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card, 
 .announce-card {
     background-color: var(--card-bg-color);
+    justify-content: start;
 }
+
+p {
+    padding: 10px;
+}
+
 
 
