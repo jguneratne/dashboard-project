@@ -5,11 +5,12 @@
     box-sizing: border-box;
 
     --body-bg-color: #f0fdfa;
-    --main-bg-color: #d1fae5;
-    --header-bg-color: #059669;
-    --sidebar-bg-color: #10b981;
+    --main-bg-color: #CAD2C5;
+    --header-bg-color: #84A98C;
+    --sidebar-bg-color: #52796F;
     --card-bg-color: #f0fdf4; 
-    --drop-shadow-color: #115e59;
+    --drop-shadow-color: #354F52;
+    --buttons-color: #2F3E46;
 }
 
 body {
