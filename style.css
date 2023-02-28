@@ -9,7 +9,7 @@
     --header-bg-color: #84A98C;
     --sidebar-bg-color: #52796F;
     --card-bg-color: #f0fdf4; 
-    --drop-shadow-color: #354F52;
+    --drop-shadow-color: rgba(53, 79, 82, .8);
     --buttons-color: #2F3E46;
 }
 
@@ -50,6 +50,7 @@ body {
     grid-template-columns: repeat(2, minmax(100px, 350px));
     grid-template-rows: repeat(3, 3fr);
     gap: 15px;
+    /* box-shadow: 0 1ch 1ch var(--drop-shadow-color); */
 }
 
 .card {
@@ -58,6 +59,8 @@ body {
     border-radius: 1ch;
     background-color: var(--card-bg-color);
     padding: 10px;
+    box-shadow: -.5ch 0 var(--drop-shadow-color),
+                0 .5ch 1ch var(--drop-shadow-color);
 }
 
 .third-col {
@@ -74,6 +77,7 @@ body {
     border-radius: 1ch;
     background-color: var(--card-bg-color);
     padding: 10px;
+    box-shadow: 0 .5ch 1ch var(--drop-shadow-color);;
 }
 
 .announce-card,
