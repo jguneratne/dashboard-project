@@ -52,6 +52,14 @@ body {
     gap: 15px;
 }
 
+.card {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    border-radius: 1ch;
+    background-color: var(--card-bg-color);
+    padding: 10px;
+}
+
 .third-col {
     display: flex;
     flex-direction: column;
@@ -63,22 +71,17 @@ body {
 .trending {
     display: grid;
     grid-template-columns: minmax(100px, 250px);
-    grid-template-rows: minmax(100%, 150px);
-}
-
-.card, 
-.announce-card,
-.trend-card {
-    display: grid;
-    align-items: start;
     border-radius: 1ch;
     background-color: var(--card-bg-color);
     padding: 10px;
 }
 
-.card {
-    grid-template-rows: repeat(3, min-content);
+.announce-card,
+.trend-card {
+    padding: 10px;
+    border-bottom: 1px solid var(--drop-shadow-color);
 }
+
 
 
 
