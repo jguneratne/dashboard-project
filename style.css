@@ -36,9 +36,10 @@ body {
 
 .side-nav-container {
     display: grid;
-    grid-template-columns: minmax(6ch, 10ch) minmax(80px, 17ch);
+    grid-template-columns: minmax(4ch, 8ch) minmax(17px, 20ch);
     grid-auto-rows: 6ch;
     justify-content: end;
+    align-items: center;
     margin-top: 2rem;
     height: min-content;
     color: var(--card-bg-color);
