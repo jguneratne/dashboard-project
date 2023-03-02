@@ -85,7 +85,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 350px));
     grid-template-rows: repeat(3, minmax(150px, min-content));
-    gap: 15px;
+    gap: 3ch;
     height: min-content;
 }
 
