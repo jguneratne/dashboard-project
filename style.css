@@ -63,7 +63,10 @@ body {
 .contacts,
 .settings,
 .support,
-.privacy {
+.privacy,
+.heart,
+.comment,
+.bookmark {
     width: 5ch;
     height: 5ch;
 }
@@ -97,6 +100,14 @@ body {
     padding: 10px;
     box-shadow: -.5ch 0 var(--drop-shadow-color),
                 0 .5ch 1ch var(--drop-shadow-color);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 5ch);
+    justify-content: end;
+    gap: 1.5ch;
+    margin-top: 2ch;
 }
 
 .right-column {
