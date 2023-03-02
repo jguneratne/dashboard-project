@@ -132,15 +132,34 @@ body {
     margin-bottom: 2ch;
 }
 
-.announce-card,
+.trend-margin {
+    margin-top: 4ch;
+}
+
 .trend-card {
+    display: grid;
+    grid-template-columns: 6ch minmax(10ch, 17ch);
+    grid-auto-rows: minmax(min-content, 6ch);
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    gap: 2ch;
+}
+
+
+.announce-card {
     padding: 10px;
     border-bottom: 1px solid var(--drop-shadow-color);
 }
 
-.trend-margin {
-    margin-top: 4ch;
+.avatar {
+    height: 6ch;
+    width: 6ch;
 }
+
+
 
 h4 {
     height: 2rem;
