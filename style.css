@@ -63,10 +63,7 @@ body {
 .contacts,
 .settings,
 .support,
-.privacy,
-.heart,
-.comment,
-.bookmark {
+.privacy {
     width: 5ch;
     height: 5ch;
 }
@@ -108,6 +105,13 @@ body {
     justify-content: end;
     gap: 1.5ch;
     margin-top: 2ch;
+}
+
+.heart,
+.comment,
+.bookmark {
+    width: 4ch;
+    height: 4ch;
 }
 
 .right-column {
