@@ -27,6 +27,46 @@ body {
 .header {
     background-color: var(--header-bg-color);
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 3rem);
+}
+
+.search {
+    display: grid;
+    grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 50rem);
+    justify-items: center;
+    align-content: space-between;
+    margin: 1ch 0 1ch 0;
+}
+
+.search-btn {
+    background-color: var(--header-bg-color);
+    border: none;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    background-color: var(--card-bg-color);
+    border-radius: 1ch;
+}
+
+.search-img {
+    width: 4ch;
+    height: 4ch;
+}
+
+.search-site {
+    width: 42rem;
+    border-radius: 1ch;
+    border: none;
+    background-color: var(--card-bg-color);
+    padding-left: 2ch;
+}
+
+.search-site:hover {
+    border: .3ch solid var(--drop-shadow-color);
+    cursor: pointer;
 }
 
 .sidebar {
