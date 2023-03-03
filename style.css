@@ -29,21 +29,23 @@ body {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 3rem);
-    padding: 1.5ch 2ch 1.5ch 2ch;
+    grid-template-rows: repeat(2, 3.5rem);
+    align-content: center;
+    padding: 0 2ch 0.5ch 2ch;
     gap: 1ch;
 }
 
 .search {
     display: grid;
-    grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 50rem);
-    justify-items: center;
-    align-content: space-between;
+    grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 44rem);
+    align-content: center;
+    justify-content: start;
 }
 
 .search-btn {
     background-color: var(--header-bg-color);
     border: none;
+    margin-right: 1.5ch;
 }
 
 .search-btn:hover {
@@ -107,7 +109,7 @@ body {
 .user-avatar-big {
     height: 8ch;
     width: 8ch;
-    margin-left: 4ch;
+    margin-left: 6ch;
 }
 
 .greeting {
