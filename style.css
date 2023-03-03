@@ -69,6 +69,35 @@ body {
     cursor: pointer;
 }
 
+.account-admin {
+    display: grid;
+    grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 6ch) minmax(min-content, 12rem);
+    justify-content: end;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1ch;
+    margin: 0 1ch 0 1ch;
+}
+
+.acct {
+    height: 4ch;
+    width: 4ch;
+}
+
+.acct:hover {
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 4ch;
+    height: 4ch;
+}
+
+.full-name {
+    color: var(--card-bg-color);
+}
+
 .sidebar {
     background-color: var(--sidebar-bg-color);
     grid-area: 1 / 1 / 3 / 2 ;
