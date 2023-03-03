@@ -119,6 +119,20 @@ body {
     align-content: center;
 }
 
+.button-div {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-content: center;
+    gap: 1ch;
+}
+
+.header-btn {
+    border-radius: 10ch;
+    border: none;
+    height: 5ch;
+    background-color: var(--buttons-color);
+    color: var(--card-bg-color)
+}
 
 
 .sidebar {
