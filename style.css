@@ -352,9 +352,9 @@ a h3.card-type {
     color: var(--buttons-color)
 }
 
-a.uname {
+a p.uname {
     color: var(--buttons-color);
-    margin-top: 3ch;
+    margin-top: 1.6ch;
 }
 
 a:hover {
