@@ -35,7 +35,7 @@ body {
     gap: 1ch;
 }
 
-.search {
+.search-container {
     display: grid;
     grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 44rem);
     align-content: center;
@@ -67,10 +67,24 @@ body {
     padding-left: 2ch;
 }
 
-.search-site:hover {
-    border: .3ch solid var(--drop-shadow-color);
+.search-bar:hover,
+.search-bar:focus {
+    border: none;
+    outline-offset: 0;
+    outline: 0;
     cursor: pointer;
 }
+
+.search-site:hover,
+.search-site:focus {
+    border: .3ch solid var(--drop-shadow-color);
+    border-radius: 1ch;
+    outline-offset: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
 
 .account-admin {
     display: grid;
