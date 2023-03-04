@@ -348,6 +348,10 @@ a {
     color: var(--card-bg-color);
 }
 
+a h3.card-type {
+    color: var(--buttons-color)
+}
+
 a.uname {
     color: var(--buttons-color);
     margin-top: 3ch;
