@@ -140,6 +140,7 @@ body {
 
 .acct:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 .user-avatar {
@@ -147,8 +148,7 @@ body {
     height: 4ch;
 }
 
-.user-avatar:hover,
-.user-avatar:focus {
+.user-avatar:hover {
     cursor: pointer;
     border: none;
     border-radius: 1ch;
@@ -174,8 +174,7 @@ body {
     margin-left: 6ch;
 }
 
-.user-avatar-big:hover,
-.user-avatar-big:focus {
+.user-avatar-big:hover {
     cursor: pointer;
     border: none;
     border-radius: 1ch;
@@ -307,6 +306,14 @@ body {
                 0 .5ch 1ch var(--drop-shadow-color);
 }
 
+
+a h3.card-type:hover {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    width: max-content;
+}
+
 .icons {
     display: grid;
     grid-template-columns: repeat(3, 5ch);
@@ -320,15 +327,7 @@ body {
 .bookmark {
     width: 4ch;
     height: 4ch;
-    position: relative;
 }
-
-.heart:hover,
-.comment:hover,
-.bookmark:hover {
-    cursor: pointer;
-}
-
 
 /* Main Div: 3rd column for Announcement and Trending cards */
 
@@ -366,6 +365,21 @@ body {
     gap: 2ch;
 }
 
+a img.avatar:hover {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    outline-offset: .5ch;
+}
+
+a p.uname:hover {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    outline-offset: .5ch;
+    width: max-content;
+}
+
 
 .announce-card {
     padding: 10px;
@@ -380,6 +394,7 @@ body {
 .avatar:hover {
     cursor: pointer;
 }
+
 
 h4 {
     height: 2rem;
@@ -405,4 +420,11 @@ a p.uname {
 
 a:hover {
     cursor: pointer;
+}
+
+a:focus {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    outline-offset: .5ch;
 }
