@@ -144,7 +144,7 @@ body {
 
 
 .search-site {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     width: 42rem;
     border-radius: 1ch;
@@ -203,7 +203,7 @@ body {
 
 .full-name {
     color: var(--card-bg-color);
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
     width: max-content;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 .name-uname {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
     font-style: bold;
     font-size: 2.2ch;
@@ -266,7 +266,7 @@ body {
     height: 5ch;
     background-color: var(--buttons-color);
     color: var(--card-bg-color);
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
 }
 
@@ -300,7 +300,7 @@ body {
 }
 
 .side-nav a {
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', 'Arial', sans-serif;
     font-weight: 600;
 }
 
@@ -482,14 +482,14 @@ a p.uname:hover {
 
 h4 {
     height: 2rem;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', 'Arial', sans-serif;
     font-weight: 700;
     color: var(--buttons-color);
 }
 
 p {
     height: min-content;
-    font-family: "Barlow";
+    font-family: "Barlow", 'Arial', sans-serif;
     font-weight: 400;
 }
 
@@ -500,7 +500,7 @@ a {
 
 a h3.card-type {
     color: var(--buttons-color);
-    font-family: "Barlow";
+    font-family: "Barlow", 'Arial', sans-serif;
     font-weight: 700;
 }
 
