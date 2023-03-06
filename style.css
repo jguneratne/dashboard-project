@@ -304,6 +304,13 @@ body {
     font-weight: 600;
 }
 
+.side-nav a:hover {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    outline-offset: .5ch;
+}
+
 .dashboard {
     height: 7ch;
     width: 7ch;
