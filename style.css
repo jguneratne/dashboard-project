@@ -329,6 +329,15 @@ a h3.card-type:hover {
     height: 4ch;
 }
 
+.heart:hover,
+.comment:hover,
+.bookmark:hover {
+    border: none;
+    border-radius: 1ch;
+    outline: .3ch solid var(--buttons-color);
+    outline-offset: .5ch;
+}
+
 /* Main Div: 3rd column for Announcement and Trending cards */
 
 .right-column {
