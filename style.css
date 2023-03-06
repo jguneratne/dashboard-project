@@ -1,33 +1,56 @@
 /* golos-text-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Golos Text';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/golos-text-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/golos-text-v3-latin-regular.woff') format('woff'); /* Modern Browsers */
+    src: url('fonts/golos-text-v3-latin-regular.woff2') format('woff2'), 
+        url('fonts/golos-text-v3-latin-regular.woff') format('woff'); 
 
   }
 
   /* golos-text-600 - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Golos Text';
-    font-style: normal;
     font-weight: 600;
-    src: url('/fonts/golos-text-v3-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/golos-text-v3-latin-600.woff') format('woff'); /* Modern Browsers */
+    src: url('fonts/golos-text-v3-latin-600.woff2') format('woff2'), 
+        url('fonts/golos-text-v3-latin-600.woff') format('woff'); 
          
   }
   /* golos-text-700 - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Golos Text';
-    font-style: normal;
     font-weight: 700;
-    src: url('/fonts/golos-text-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/fonts/golos-text-v3-latin-700.woff') format('woff'); /* Modern Browsers */
+    src: url('fonts/golos-text-v3-latin-700.woff2') format('woff2'), 
+        url('fonts/golos-text-v3-latin-700.woff') format('woff'); 
          
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/montserrat-v25-latin-regular.woff2') format('woff2'), 
+        url('fonts/montserrat-v25-latin-regular.woff') format('woff'); 
+         
+  }
+  
+  /* montserrat-italic - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/montserrat-v25-latin-italic.woff2') format('woff2'), 
+    url('fonts/montserrat-v25-latin-italic.woff') format('woff');
+  }
+
+  /* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    src: url('fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+    url('fonts/montserrat-v25-latin-700.woff') format('woff');
   }
 
 
@@ -103,6 +126,8 @@ body {
 
 
 .search-site {
+    font-family: "Montserrat";
+    font-weight: 400;
     width: 42rem;
     border-radius: 1ch;
     border: none;
@@ -128,9 +153,9 @@ body {
 .account-admin {
     display: grid;
     grid-template-columns: minmax(min-content, 6ch) minmax(min-content, 6ch) minmax(min-content, 12rem);
-    justify-content: end;
+    justify-content: center;
     align-content: center;
-    justify-items: center;
+    justify-items: start;
     align-items: center;
     gap: 1ch;
 }
@@ -160,6 +185,9 @@ body {
 
 .full-name {
     color: var(--card-bg-color);
+    font-family: "Montserrat";
+    font-weight: 700;
+    width: max-content;
 }
 
 /* Header: Greeting (Bottom Left) */
@@ -168,6 +196,27 @@ body {
     display: grid;
     grid-template-columns: 5ch minmax(min-content, 12ch) minmax(min-content, 20rem);
     align-content: center;
+}
+
+.greeting {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(min-content, 3ch));
+    margin-left: 3ch;
+    align-content: center;
+}
+
+.welcome {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 2ch;
+}
+
+.name-uname {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 2.2ch;
+    width: max-content;
 }
 
 .user-avatar-big {
@@ -184,13 +233,6 @@ body {
     transform: scale(1.2);
 }
 
-.greeting {
-    display: grid;
-    grid-template-rows: repeat(2, minmax(min-content, 3ch));
-    margin-left: 3ch;
-    align-content: center;
-}
-
 /* Header: Buttons (Bottom Right) */
 
 .button-div {
@@ -205,7 +247,9 @@ body {
     border: none;
     height: 5ch;
     background-color: var(--buttons-color);
-    color: var(--card-bg-color)
+    color: var(--card-bg-color);
+    font-family: "Montserrat";
+    font-weight: 400;
 }
 
 .header-btn:hover,
@@ -235,6 +279,11 @@ body {
 
 .side-nav {
     padding-top: 1rem;
+}
+
+.side-nav a {
+    font-family: 'Golos Text';
+    font-weight: 600;
 }
 
 .dashboard {
@@ -391,7 +440,6 @@ a p.uname:hover {
     width: max-content;
 }
 
-
 .announce-card {
     padding: 10px;
     border-bottom: 1px solid var(--drop-shadow-color);
@@ -409,10 +457,14 @@ a p.uname:hover {
 
 h4 {
     height: 2rem;
+    font-family: 'Golos Text';
+    font-weight: 700;
+    color: var(--buttons-color);
 }
 
 p {
     height: min-content;
+
 }
 
 a {
